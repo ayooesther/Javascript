@@ -1,0 +1,7 @@
+EXPLAIN DECLARATION ,DEFINITION,INITIALIZATION IN JS
+   
+   DECLARATION:	declaration of a variable is for  informing  the compiler the following information;name of te variable,type of value it holds and the initial value if any.
+
+   DEFINITION:the definition of a variable says where the variables gets stored,eg the memory of the variable is allocated during the definition of the variable.
+
+   INITIALIZATION:this is when you declare a variable andits automatically initialized,meaning it is allocated for the variable by the Jvascript engine.  
