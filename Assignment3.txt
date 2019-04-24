@@ -1,0 +1,59 @@
+fruits_list= ["banana","mango","oranges","apples","berries" ,"grapes" ,"melons"];
+
+function printFruits(fruits_list){
+	
+	for (var c=0; c<fruits_list.length; c++){
+
+		console.log(fruits_list[c]);
+   
+        }
+
+}
+
+
+
+undefined
+
+fruits_list
+(7) ["banana", "mango", "oranges", "apples", "berries", "grapes", "melons"]
+
+printFruits(fruits_list)
+VM2362:3 banana
+
+VM2362:3 mango
+
+VM2362:3 oranges
+
+VM2362:3 apples
+
+VM2362:3 berries
+
+VM2362:3 grapes
+
+VM2362:3 melons
+
+undefined
+
+function getFruits(c, myfruitslist){
+			
+console.log(myfruitslist[c])
+}
+
+undefined
+getFruits(3,fruits_list)
+
+VM2711:2 apples
+
+undefined
+
+getFruits(5,fruits_list)
+
+VM2711:2 grapes
+
+undefined
+
+getFruits(6,fruits_list)
+
+VM2711:2 melons
+
+undefined
