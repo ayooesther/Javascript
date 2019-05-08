@@ -1,0 +1,56 @@
+function getGrade(avgmarks)
+
+{ if (avgmarks>=80)}
+ 
+return ("A");}
+ 
+
+ else if(avgmarks>=70 && avgmarks<=79){
+ 
+    return ("B");}
+
+ else if(avgmarks>=60 && avgmarks<=69){
+  
+   return ("C");}
+
+ else if(avgmarks>=50 && avgmarks<=59){
+ 
+    return ("D");}
+ 
+else if(avgmarks>=0 && avgmarks<=40){
+   
+  return ("E");}
+
+ else {
+ 
+    return ("F");}}
+
+undefined
+
+getGrade(84)
+
+"A"
+
+getGrade(78)
+
+"B"
+
+getGrade(60)
+
+"C"
+
+getGrade(55)
+
+"D"
+
+getGrade(46)
+
+"F"
+
+getGrade(33)
+
+"E"
+
+getGrade(29)
+
+"E"
