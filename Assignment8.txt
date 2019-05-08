@@ -1,0 +1,18 @@
+let user = {
+ name: "Esther Ayoo",
+ years: 20
+};
+let {name,years}=user;
+
+alert(name);
+
+alert(years);
+
+
+let ask=(question,yes,no) =>(confirm(question))? yes():no()
+        
+let question = ask ( "Do you agree?",
+                     () =>alert("You agreed"),
+                     () =>alert("You cancelled the execution"))
+                    
+                    console.log(question);
