@@ -1,0 +1,15 @@
+function calculateFruitCost(fruitName,quantity) {
+
+var fruits = {"apple":30,"orange":20,"peas":40,"melon":50};
+
+var price = fruits[fruitName]*quantity;
+
+console.log(quantity + ' ' + fruitName + ' ' + 'for KES' + ' ' + price);}
+
+
+undefined
+calculateFruitCost("peas",3);
+
+VM170:4 3 peas for KES 120
+
+undefined
