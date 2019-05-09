@@ -1,0 +1,79 @@
+function fullName(firstName,lastName){
+  
+  return `${firstName} {lastName}`
+  
+}
+function ask() {  // passing our callback param
+  
+  firstName = prompt("what is your first name?")
+  lastName = prompt("what is your last name?")
+  let name = fullName(firstName,lastName); // callback function
+  alert( "your name is "+ name);
+}
+ask(fullName)
+
+
+
+function gift(){
+  return  "ice cream"
+}
+
+function receiveGift(gift){
+  
+  setTimeout(() => alert("taraah.. your gift is " + gift()), 3000)
+  
+}
+receiveGift(gift)
+
+
+
+
+console.log("plant kunde")
+setTimeout(() => console.log("water kunde"), 3000)
+
+
+
+console.log("water kunde")
+
+
+
+console.log("plant kunde")
+
+let myInterval = setInterval(() => console.log("water kunde"), 1000)
+setTimeout(() => clearInterval(myInterval), 3000)
+
+
+console.log("fertilize kunde")
+
+
+
+
+
+
+let birthdayPromise = new Promise(function(resolve,reject){
+  return resolve("Iam at your birthday")
+});
+
+birthdayPromise.then(response => {
+  console.log(response);
+  
+})
+
+
+
+let birthdayPromise = new Promise(function(resolve,reject){
+  return setTimeout(()  => resolve("Iam at your birthday") ,3000)
+});
+
+birthdayPromise.then(response => {
+  console.log(response);
+  
+})
+
+
+
+
+
+
+
+
