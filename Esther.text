@@ -1,0 +1,126 @@
+class Mkulima {
+
+
+
+constructor() {
+
+this.farms = [];
+
+this.vendors = [];
+
+this.products = [];
+
+this.orders = [];
+
+ }
+  addFarm(farmId,name,farmer,phone,address){
+    this.farms.push(farmId);
+    this.farms.push(name);
+    this.farms.push(farmer);
+    this.farms.push(phone);
+    this.farms.push(address);
+  }
+  removeFarm(farmId){
+    if (this.farms[0] === farmId){
+      this.farms = [];
+    }
+  }
+  updateFarm(farmId, name, farmer, phone, address){
+    this.farms.push(farmId);
+    this.farms.push(name);
+    this.farms.push(farmer);
+    this.farms.push(phone);
+    this.farms.push(address);
+    
+  }
+  getFarm( farmId ){
+    if (this.farms[0] === farmId){
+      console.log(this.farms);
+    }
+    else{
+      console.log("The record doesnt exist.")
+    }
+  }
+  addVendor(vendorId, name, phone){
+    this.vendors.push(vendorId);
+    this.vendors.push(name);
+    this.vendors.push(phone);
+  }
+  removeVendor(vendorId){
+    if (this.vendors [0] === vendorId){
+      this.vendors =[];
+    }
+  }
+  updateVendor(vendorId, name, phone){
+    this.vendors.push(vendorId);
+    this.vendors.push(name);
+    this.vendors.push(phone);
+    
+  }
+  getVendor(vendorId){
+    if (this.vendors[0] === vendorId){
+     console.log (this.vendors);
+    }
+    else{
+      console.log("The record doesnt exist")
+    }
+  }
+addProduct(productId, name, price){
+  this.products.push(productId);
+  this.products.push(name);
+  this.products.push(price);
+}
+removeProduct(productId){
+  if (this.products [0] === productId){
+    this.products =[];  
+  }
+}
+updateProduct(productId, name, price){
+  this.products.push(productId);
+  this.products.push(name);
+  this.products.push(price);
+  
+}
+ getProduct(productId){
+   if (this.products[0] === productId){
+     console.log(this.products);
+   }
+   else{
+     console.log("The record doesnt exist")
+   }
+ }
+  
+  printProducts(){
+    var priceList = [];
+    var obj = {};
+    obj [this.products[1]]=this.products[2];
+         console.log(obj);
+    
+  }
+  
+ }
+  
+
+let farm1 = new Mkulima();
+farm1.addFarm("2020","Esther","Ayoo","0701038967","Nairobi");
+farm1.removeFarm("2020");
+farm1.getFarm("2020");
+farm1.updateFarm("2021","Esther","Ayoo","0701038967","Nairobi");
+farm1.getFarm("2021");
+
+
+let vendor1= new Mkulima();
+farm1.addVendor("2020","Esther","0701038967");
+farm1.removeVendor("2020");
+farm1.getVendor("2020");
+farm1.updateVendor("2021","Esther","0701038967");
+farm1.getVendor("2021");
+
+
+let pruduct1= new Mkulima();
+farm1.addProduct("2020","maize",2000);
+farm1.removeProduct("2020");
+farm1.getProduct("2020");
+farm1.updateProduct("2020","maize",2000);
+farm1.getProduct("2021","maize",2000);
+farm1.printProducts();
