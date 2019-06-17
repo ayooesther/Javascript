@@ -1,0 +1,23 @@
+var body=document.body;
+ document.body.style.backgroundColor = "silver";
+ 
+ var h1 =document.getElementById("title").style.color = "green";
+
+ var h3 = document.getElementById("h3");
+ h3.style.textTransform="upperCase"
+ 
+ var h3 = document.getElementById("veges");
+ h3.style.textTransform="upperCase"
+ 
+ var node = document.createElement("li")
+ var textnode = document.createTextNode("Grapes");
+ node.appendChild(textnode);
+ document.getElementById("fruList").appendChild(node);
+
+
+
+ var node = document.createElement("li")
+ var textnode =document.createTextNode("Spinach");
+ node.appendChild(textnode);
+ document.getElementById("vegList").appendChild(node);
+
