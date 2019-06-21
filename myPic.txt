@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+    #myPic {
+      width:200px
+    }
+    
+    </style>
+</head>
+<body>
+<div id=>
+  
+  <img id="myPic" src="http://www.breakpoint.org/wp-content/uploads/2019/04/baby.jpg">
+</div>
+  <!-- <input onchange="alert('something changed')"/> -->
+   <input id ="name"/>                                          
+   <button id="myButton" >submit</button>
+  
+   <input id ="nameA"/>
+  <button id="secButton">submit</button> 
+    
+ 
+</body>
+</html>
+
+
+
+// myPic.onclick=() =>
+//  alert("clicked")
+// myPic.onmouseover =() => {
+//  alert("mouseover")
+// 
+
+// myButton.onclick=()=>{
+//   var element =document.getElementById("name")
+//   alert(element.value)
+// }
+
+secButton.onclick=()=>{
+  var element =document.getElementById("nameA")
+  alert(element.value)
+}
+div1.addEventListener("click", () =>alert("div clicked"),{capture:true})
+myPic.addEventListener("click",()=>alert("baby clicked"),{capture:true})
+// myPic.addEventListener("mouseover", ()=> console.log("baby mouseover"))
