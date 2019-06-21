@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+       #mario {
+        position: relative;
+        cursor: pointer;
+        width: 150px;
+      }
+    </style>
+  </head>
+<body>
+  <img id="mario" src="https://live.staticflickr.com/4077/4887414974_e742d80cb1_b.jpg">
+</body>
+</html>
+
+
+mario.onclick= () => {
+//   alert("clicked")
+  let start=Date.now()
+//   alert(start)
+  let intervalId=setInterval(superMario,20)
+  
+ function superMario (){
+   let timePassed=Date.now() - start
+   
+ if (timePassed>2000){
+    clearInterval(intervalId)
+    alert ("hurray")
+    
+
+  
+ }else{
+    mario.style.left=timePassed/5 + "px" 
+  } 
+ }
+  
+}
